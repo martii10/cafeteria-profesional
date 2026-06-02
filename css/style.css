@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Poppins',sans-serif;
+background:#faf7f2;
+color:#333;
+}
+
+/* HEADER */
+
+header{
+position:sticky;
+top:0;
+z-index:1000;
+background:white;
+padding:20px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 3px 15px rgba(0,0,0,0.08);
+}
+
+.logo{
+font-family:'Playfair Display',serif;
+font-size:32px;
+font-weight:bold;
+color:#b5856b;
+}
+
+nav{
+display:flex;
+gap:25px;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+font-weight:500;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#b5856b;
+}
+
+/* HERO */
+
+.hero{
+height:90vh;
+background:
+linear-gradient(rgba(0,0,0,0.35),rgba(0,0,0,0.35)),
+url('../images/hero.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero-content{
+max-width:700px;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:70px;
+font-family:'Playfair Display',serif;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.btn{
+background:#d6a48a;
+color:white;
+padding:15px 35px;
+border-radius:30px;
+text-decoration:none;
+font-weight:600;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#b5856b;
+}
+
+/* HISTORIA */
+
+.historia{
+padding:100px 10%;
+display:flex;
+align-items:center;
+gap:60px;
+flex-wrap:wrap;
+}
+
+.historia img{
+width:500px;
+max-width:100%;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.historia-texto{
+flex:1;
+}
+
+.historia h2{
+font-size:45px;
+font-family:'Playfair Display',serif;
+margin-bottom:20px;
+color:#b5856b;
+}
+
+/* HORARIOS */
+
+.horarios{
+padding:100px 10%;
+text-align:center;
+}
+
+.horarios h2{
+font-size:45px;
+margin-bottom:40px;
+font-family:'Playfair Display',serif;
+color:#b5856b;
+}
+
+.cards{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.card{
+background:white;
+padding:30px;
+width:280px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+/* GALERIA */
+
+.galeria{
+padding:100px 10%;
+text-align:center;
+}
+
+.galeria h2{
+font-size:45px;
+margin-bottom:40px;
+font-family:'Playfair Display',serif;
+color:#b5856b;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.grid img{
+width:100%;
+height:300px;
+object-fit:cover;
+border-radius:20px;
+transition:0.4s;
+}
+
+.grid img:hover{
+transform:scale(1.04);
+}
+
+/* OPINIONES */
+
+.opiniones{
+padding:100px 10%;
+text-align:center;
+background:#fff;
+}
+
+.opiniones h2{
+font-size:45px;
+margin-bottom:40px;
+font-family:'Playfair Display',serif;
+color:#b5856b;
+}
+
+/* MENU */
+
+.hero-menu{
+padding:120px 20px;
+text-align:center;
+background:#f4ebe4;
+}
+
+.hero-menu h1{
+font-size:60px;
+font-family:'Playfair Display',serif;
+color:#b5856b;
+}
+
+.menu-section{
+padding:80px 10%;
+}
+
+.menu-section h2{
+font-size:40px;
+margin-bottom:40px;
+font-family:'Playfair Display',serif;
+color:#b5856b;
+text-align:center;
+}
+
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+}
+
+.menu-card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.menu-card:hover{
+transform:translateY(-10px);
+}
+
+.menu-card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.menu-card h3{
+padding:20px;
+}
+
+.menu-card p{
+padding:0 20px 15px;
+}
+
+.menu-card span{
+display:block;
+padding:0 20px 20px;
+font-weight:bold;
+color:#b5856b;
+}
+
+/* EXPERIENCIA */
+
+.experiencia{
+padding:100px 10%;
+display:flex;
+align-items:center;
+gap:60px;
+flex-wrap:wrap;
+}
+
+.experiencia img{
+width:500px;
+max-width:100%;
+border-radius:20px;
+}
+
+.experiencia h2{
+font-size:45px;
+font-family:'Playfair Display',serif;
+margin-bottom:20px;
+color:#b5856b;
+}
+
+/* RESERVAS */
+
+.hero-reservas{
+height:60vh;
+background:
+linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+url('../images/flores.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.overlay-reservas h1{
+font-size:60px;
+font-family:'Playfair Display',serif;
+}
+
+.reservas-container{
+padding:100px 10%;
+display:flex;
+gap:50px;
+flex-wrap:wrap;
+}
+
+.reserva-info,
+.reserva-form{
+flex:1;
+}
+
+.reserva-form form{
+background:white;
+padding:40px;
+border-radius:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.reserva-form input,
+.reserva-form select,
+.reserva-form textarea{
+width:100%;
+padding:15px;
+margin-bottom:15px;
+border:1px solid #ddd;
+border-radius:10px;
+}
+
+.reserva-form button{
+width:100%;
+padding:15px;
+background:#b5856b;
+color:white;
+border:none;
+border-radius:10px;
+cursor:pointer;
+}
+
+/* CONTACTO */
+
+.contacto-hero{
+padding:120px 20px;
+text-align:center;
+background:#f4ebe4;
+}
+
+.contacto-hero h1{
+font-size:60px;
+font-family:'Playfair Display',serif;
+color:#b5856b;
+}
+
+.contacto-container{
+padding:100px 10%;
+display:flex;
+gap:60px;
+align-items:center;
+flex-wrap:wrap;
+}
+
+.contacto-container img{
+width:500px;
+max-width:100%;
+border-radius:20px;
+}
+
+.contacto-info h2{
+font-size:40px;
+margin-bottom:20px;
+font-family:'Playfair Display',serif;
+color:#b5856b;
+}
+
+.redes{
+padding:80px 10%;
+text-align:center;
+}
+
+/* FOOTER */
+
+footer{
+background:#f0e3d9;
+padding:40px;
+text-align:center;
+margin-top:50px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+header{
+flex-direction:column;
+gap:20px;
+}
+
+.hero h1{
+font-size:45px;
+}
+
+.hero-menu h1,
+.contacto-hero h1,
+.overlay-reservas h1{
+font-size:40px;
+}
+
+.historia,
+.experiencia,
+.contacto-container{
+flex-direction:column;
+}
+
+}
